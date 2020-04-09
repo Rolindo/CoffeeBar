@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/home/index",
+      "pages/order/order",
+    "pages/contact/contact",
+    "pages/menu/menu",
+    "pages/sc/sc"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color":"#999",
+    "selectedColor": "#333",
+    "list": [{
+      "pagePath": "pages/home/index",
+      "text": "首页",
+      "iconPath": "./images/bar/bar1_1.png",
+      "selectedIconPath": "./images/bar/bar1.png"
+    },
+    {
+      "pagePath": "pages/menu/menu",
+      "text": "菜单",
+      "iconPath": "./images/bar/bar2_2.png",
+      "selectedIconPath": "./images/bar/bar2.png"
+    },
+    {
+      "pagePath": "pages/order/order",
+      "text": "新品",
+      "iconPath": "./images/bar/bar3_3.png",
+      "selectedIconPath": "./images/bar/bar3.png"
+    },
+    {
+      "pagePath": "pages/contact/contact",
+      "text": "客服",
+      "iconPath": "./images/bar/bar4_4.png",
+      "selectedIconPath": "./images/bar/bar4.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

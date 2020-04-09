@@ -1,0 +1,67 @@
+<view class="container">
+  <view class="circle">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" interval="2000" bindchange="swiperFn">
+      <swiper-item wx:for="{{array}}" wx:key="*this">
+        <image src="{{item}}"></image>
+      </swiper-item>
+    </swiper>
+    <view class="dot">
+      <view class="{{index==number?'active':''}}" wx:for="{{array}}" wx:key="*this"></view>
+    </view>
+  </view>
+  <view class="proShow">
+    <view class="part1">
+      <view class="left_pic">
+        <image src="/images/home/pro1.jpg"></image>
+      </view>
+      <view class="right_pic">
+        <image src="/images/home/pro2.jpg"></image>
+        <image src="/images/home/pro3.jpg"></image>
+      </view>
+    </view>
+
+     <view class="bottom_pic">
+      <image src="/images/home/pro4.jpg"></image>
+      <image src="/images/home/pro5.jpg"></image>
+    </view>
+  </view>
+
+
+  <view class="newCard">
+    <view class="newCardTop">
+      <view class="line same"></view>
+      <view class="title same">咖啡的故事</view>
+    </view>
+    <scroll-view scroll-x>
+      <view class="scroll" wx:for="{{array2}}" wx:key="*this">
+        <image src="{{item.src}}"></image>
+        <text>{{item.text}}</text>
+      </view>
+    </scroll-view>
+    <view class="circle">
+    <view class="newCardTop">
+        <view class="line same"></view>
+        <view class="title same">猜你喜欢</view>
+      </view>
+      <swiper indicator-dots="{{indicatorDots1}}" autoplay="{{autoplay1}}" circular="{{circular1}}" indicator-active-color="#333999">
+        <swiper-item wx:for="{{array3}}" wx:key="*this">
+          <image src="{{item}}"></image>
+        </swiper-item>
+      </swiper>
+    </view>
+
+
+    <view class="newPro">
+      <view class="newCardTop">
+        <view class="line same"></view>
+        <view class="title same">猜你喜欢</view>
+      </view>
+      <view class="newProDown">
+        <view wx:for="{{array4}}">
+          <image src="{{item.src}}"></image>
+          <text>{{item.text}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

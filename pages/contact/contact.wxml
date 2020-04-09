@@ -1,0 +1,20 @@
+<view class="container">
+  <!-- map.wxml -->
+  <map id="map" longitude="121.457368" latitude="28.655866" scale="14" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" show-location style="width: 100%; height: 200px;"></map>
+
+  <view class="box">
+    <view class="title">公司总部</view>
+    <view>
+      <view>地址：浙江省台州市椒江区科学技术局行政单位</view>
+      <view>邮编：317507</view>
+    </view>
+  </view>
+
+   <view class="box">
+    <view class="title">客户服务</view>
+    <view>
+      <view>客服热线：13232233223</view>
+      <view>邮箱：826508290@qq.com</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,52 @@
+/* pages/order/order.wxss */
+@import "/iconfont/iconfont.wxss";
+.banner_show{
+  width: 90%;
+  margin: 30px auto;
+  height: 400rpx;
+}
+.banner_show image{
+  width: 100%;
+   height: 400rpx;
+  display: block;
+}
+.choose_card{
+  width: 90%;
+  margin: 0 auto;
+}
+.card_up{
+  margin-top: -20px;
+  color: #666;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center
+}
+.card_down{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card_down view{
+  width: 31%;
+  height: 150rpx;
+  margin-bottom: 20rpx;
+  border: 4rpx solid transparent;
+  border-radius: 5%;
+}
+.card_down view image{
+  width: 100%;
+  height:150rpx;
+  opacity: 0.7;
+}
+.card_down .current{
+  border: 4rpx solid orange;
+}
+.card_down .current image{
+  opacity: 1;
+}
+.iconfont-icon1::before{
+  content: "\e6c9";
+  color: orange;
+}
+

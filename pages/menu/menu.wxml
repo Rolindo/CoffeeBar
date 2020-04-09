@@ -1,0 +1,38 @@
+<!--pages/menu/menu.wxml-->
+<view class="container">
+  <view class="circle">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" interval="2000" wx:key="*this" bindchange="swiperFn">
+      <swiper-item wx:for="{{array}}">
+        <image src="{{item}}"></image>
+      </swiper-item>
+    </swiper>
+    <view class="dot">
+      <view class="{{index==number?'active':''}}" wx:for="{{array}}" wx:key="*this"></view>
+    </view>
+
+  </view>
+  <view class="menu">
+    <view class="left-box">
+      <scroll-view scroll-y class="left-menu" scroll-into-view="{{leftViewId}}">
+        <text class="menu-item {{index == currentIndex?'menu-active':''}}" wx:for="{{navList}}" bindtap="changeMenu" data-i="{{index}}" data-id="menu{{index}}">
+          {{item.c_name}}
+        </text>
+      </scroll-view>
+    </view>
+    <view class="right-box">
+      <scroll-view scroll-y class="right-menu" scroll-into-view="{{rightViewId}}" scroll-with-animation bindscroll="getScroll">
+        <view class="pro-item" wx:for="{{navList}}" wx:key="*this"  id="menu{{index}}">
+          <view class="right-menu-head">
+           {{item.c_name}}
+          </view>
+          <view class="list-box">
+            <view class="menu-list" wx:for="{{item.list}}" wx:for-item="items">
+              <image src="{{items.url}}"></image>
+              <view>{{items.goodsName}}</view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

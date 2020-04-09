@@ -1,0 +1,23 @@
+<!--pages/order/order.wxml-->
+<view class="container">
+  <view class="container_up">
+    <view class="banner_show">
+      <image src="{{bannerSrc}}"></image>
+    </view>
+    <view class="choose_card">
+      <view class="card_up">
+       <text  class="iconfont iconfont-icon1"></text>  选择咖啡
+      </view>
+      <view class="card_down">
+        <block wx:for="{{srcArr}}">
+          <view class="{{index==currentIndex?'current':' '}}" bindtap="changeSrc" data-index = "{{index}}">
+            <image src="{{item}}"></image>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+
+  <view class="back" bindtap="goToTabBar">返回菜单</view>
+      <view bindtap="goFoTabBar">非tabBar页面,应用内的某个页面</view>
+</view>

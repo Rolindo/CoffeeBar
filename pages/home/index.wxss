@@ -1,0 +1,194 @@
+/* pages/home/index.wxss */
+
+
+swiper, swiper-item, swiper-item image {
+  width: 100%;
+  height: 500rpx;
+}
+
+.circle {
+  position: relative;
+}
+
+.dot {
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+}
+
+.dot view {
+  float: left;
+  width: 20rpx;
+  height: 20rpx;
+  background: #999;
+  border-radius: 50%;
+  margin: 10rpx;
+}
+
+.dot view.active {
+  background: #333999;
+  width: 36rpx;
+  border-radius: 20%;
+}
+
+.proShow {
+  display: flex;
+  flex-direction: column;
+  padding: 10rpx;
+  justify-content: space-between;
+}
+
+.part1 {
+  display: flex;
+}
+
+.left_pic {
+  display: flex;
+  flex: 5;
+  margin-right: 10rpx;
+}
+
+.left_pic image {
+  width: 100%;
+  height: 300rpx;
+}
+
+.right_pic {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+  width: 200rpx;
+  height: 300rpx;
+}
+
+.right_pic image {
+  width: 100%;
+  height: 150rpx;
+}
+
+.right_pic image:nth-child(1) {
+  margin-bottom: 10rpx;
+}
+
+.bottom_pic {
+  display: flex;
+   margin-top: 10rpx;
+}
+
+.bottom_pic image {
+  height: 140rpx;
+  width: 100%;
+ 
+}
+
+.bottom_pic image:nth-child(1) {
+  flex: 7;
+  margin-right: 10rpx;
+}
+
+.bottom_pic image:nth-child(2) {
+  flex: 3;
+}
+
+.newCard {
+  margin-top: 20rpx;
+}
+
+.newCardTop {
+  position: relative;
+  line-height: 100rpx;
+  height: 100rpx;
+}
+
+.newCardTop .same {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.newCardTop .line {
+  width: 32%;
+  background: #ccc;
+  height: 4rpx;
+}
+
+.newCardTop .title {
+  text-align: center;
+  width: 26%;
+  background: #fff;
+  font-weight: bolder;
+}
+
+scroll-view {
+  display: flex;
+  white-space: nowrap;
+  height: 300rpx;
+}
+
+scroll-view .scroll {
+  display: inline-block;
+  width: 35%;
+  height: 250rpx;
+  background: #fff;
+  margin: 20rpx 16rpx 10rpx 10rpx;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  overflow: hidden;
+}
+
+scroll-view .scroll image {
+  width: 100%;
+  display: block;
+  height: 200rpx;
+}
+
+scroll-view .scroll text {
+  display: block;
+  color: #999;
+  font-size: 24rpx;
+}
+
+.newCard swiper, .newCard swiper-item, .newCard swiper-item image {
+  width: 100%;
+  height: 420rpx;
+ 
+}
+.newCard swiper{
+ border:1px solid #ccc;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+.newPro{
+  margin-top: 20rpx;
+}
+.newProDown{
+  border-top: 4rpx solid #ccc;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20rpx;
+  justify-content: space-between;
+}
+.newPro .newProDown view{
+ width: 48%;
+ margin-top: 20rpx;
+ border: 2rpx solid #ccc;
+ border-radius: 8rpx;
+ box-shadow: 0 0 5rpx rgba(0, 0, 0, 0.4); 
+ overflow: hidden;
+}
+.newProDown view text{
+  display: block;
+  text-align: center;
+  font-size: 28rpx;
+  color: #999;
+}
+.newPro view image{
+  width: 100%;
+  display: block;
+  height: 320rpx;
+}
+

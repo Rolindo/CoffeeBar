@@ -1,0 +1,6 @@
+<view class="container">
+  <view>非tabBar页面,应用内的某个页面</view>
+  <view class="back" bindtap="goToTabBar">返回菜单</view>
+
+
+</view>

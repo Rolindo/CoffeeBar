@@ -1,0 +1,9 @@
+/* pages/contact/contact.wxss */
+.box{
+  width: 100%;
+  margin: 20rpx;
+}
+.box .title{
+  color: #999;
+  margin-bottom: 10rpx;
+}
